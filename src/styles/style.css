@@ -1704,8 +1704,7 @@ body, html {
     overflow-y: auto;
     text-align: justify;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 80vh;
   }
   .cart-section .cartTitle {
     width: 100vw;
