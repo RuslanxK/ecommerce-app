@@ -913,6 +913,18 @@ html {
     }
   }
 
+
+  .product-details-section {
+
+     height: 120vh !important;
+
+     img {
+
+      width: 200px !important;
+      height: 200px !important;
+     }
+  }
+
   .footer {
     @include flexbox(flex, column, space-between, center);
     height: 40vh;

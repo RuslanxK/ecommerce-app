@@ -1655,6 +1655,13 @@ html {
   .newsLetter input {
     width: 250px !important;
   }
+  .product-details-section {
+    height: 120vh !important;
+  }
+  .product-details-section img {
+    width: 200px !important;
+    height: 200px !important;
+  }
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
