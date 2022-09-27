@@ -386,7 +386,6 @@ html {
 
 .product-details-right-div {
   width: 50vw;
-  height: 600px;
   @include flexbox(flex, column, center, center);
   background-color: white;
   text-align: center;
