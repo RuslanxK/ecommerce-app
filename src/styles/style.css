@@ -1672,7 +1672,7 @@ html {
     margin-bottom: 15px;
   }
   .product-details-section .product-details-left-div {
-    height: 60vh;
+    padding-top: 100px;
   }
   .footer {
     display: -webkit-box;
