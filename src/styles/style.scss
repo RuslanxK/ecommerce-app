@@ -27,7 +27,7 @@
   font-family: "Mukta", sans-serif;
 }
 
-body {
+body, html {
   background-color: #f8f9fa;
   overflow-x: hidden !important;
 }
@@ -815,6 +815,9 @@ body {
   border-bottom: 1px solid #dee2e6;
 }
 
+
+
+
 @media only screen and (max-width: 767px) {
   .navbar {
     .nav-links {
@@ -944,6 +947,8 @@ body {
       overflow-y: auto;
       text-align: justify;
       text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     .cartTitle {
