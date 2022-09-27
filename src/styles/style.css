@@ -1695,8 +1695,9 @@ html {
             align-items: center;
   }
   .cart-section textarea {
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-left: 35px;
+    margin-right: 25px;
+    padding-left: 10px;
   }
   .cart-section .productsDiv {
     width: 100vw;
