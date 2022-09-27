@@ -932,6 +932,12 @@ html {
     @include flexbox(flex, column, top, center);
     
 
+    textarea {
+
+       padding-left: 50px;
+       padding-right: 50px;
+    }
+
     .productsDiv {
       width: 100vw;
       padding-left: 40px;
@@ -945,7 +951,11 @@ html {
 
     .cartTitle {
       width: 100vw;
-      font-size: 35px !important;
+       
+      h1 {
+
+        font-size: 35px !important;
+      }
     }
 
     .detailsDiv {
