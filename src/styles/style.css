@@ -1660,6 +1660,7 @@ html {
   }
   .product-details-section h1 {
     padding: 25px;
+    font-size: 20px !important;
   }
   .product-details-section p {
     padding: 25px;
