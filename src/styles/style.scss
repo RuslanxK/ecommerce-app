@@ -869,10 +869,11 @@ body {
 
   .category {
     @include flexbox(flex, column, center, center);
+    padding: 25px !important;
     
     button {
 
-      font-size: 14px !important;
+      font-size: 12px !important;
       border: 1px solid rgb(209, 209, 209);
       padding: 0px;
       margin: 1px;

@@ -1614,9 +1614,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 25px !important;
   }
   .category button {
-    font-size: 14px !important;
+    font-size: 12px !important;
     border: 1px solid #d1d1d1;
     padding: 0px;
     margin: 1px;
