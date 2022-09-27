@@ -1583,9 +1583,13 @@ body {
             align-items: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 260px 260px;
-        grid-template-columns: 260px 260px;
+    -ms-grid-columns: 200px 200px;
+        grid-template-columns: 200px 200px;
     height: 55vh;
+  }
+  .guarantee .g1, .guarantee .g2, .guarantee .g3, .guarantee .g4 {
+    padding: 0px;
+    margin: 0px;
   }
   .category {
     display: -webkit-box;

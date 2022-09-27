@@ -844,8 +844,14 @@ body {
   .guarantee {
     @include flexbox(flex, column, center, center);
     display: grid;
-    grid-template-columns: 260px 260px;
+    grid-template-columns: 200px 200px;
     height: 55vh;
+
+    .g1, .g2, .g3, .g4 {
+
+       padding: 0px;
+       margin: 0px;
+    }
   }
 
   .category {
