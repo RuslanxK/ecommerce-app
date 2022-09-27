@@ -1662,6 +1662,15 @@ html {
     width: 200px !important;
     height: 200px !important;
   }
+  .product-details-section h1 {
+    padding: 25px;
+  }
+  .product-details-section p {
+    padding: 25px;
+  }
+  .product-details-section button {
+    margin-bottom: 50px;
+  }
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
