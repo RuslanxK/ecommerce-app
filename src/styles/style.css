@@ -4,7 +4,8 @@
   font-family: "Mukta", sans-serif;
 }
 
-body, html {
+body,
+html {
   background-color: #f8f9fa;
   overflow-x: hidden !important;
 }
@@ -1588,16 +1589,25 @@ body, html {
         grid-template-columns: 150px 150px;
     height: 55vh;
   }
-  .guarantee .g1, .guarantee .g2, .guarantee .g3, .guarantee .g4 {
+  .guarantee .g1,
+  .guarantee .g2,
+  .guarantee .g3,
+  .guarantee .g4 {
     padding: 0px;
     margin: 10px;
     width: 90%;
   }
-  .guarantee .g1 img, .guarantee .g2 img, .guarantee .g3 img, .guarantee .g4 img {
+  .guarantee .g1 img,
+  .guarantee .g2 img,
+  .guarantee .g3 img,
+  .guarantee .g4 img {
     width: 50px;
     padding: 10px;
   }
-  .guarantee .g1 h3, .guarantee .g2 h3, .guarantee .g3 h3, .guarantee .g4 h3 {
+  .guarantee .g1 h3,
+  .guarantee .g2 h3,
+  .guarantee .g3 h3,
+  .guarantee .g4 h3 {
     font-size: 15px;
   }
   .category {
@@ -1726,6 +1736,14 @@ body, html {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+  }
+  .cart-section .cartProductDiv img {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+  }
+  .cart-section .cartProductDiv h3 {
+    font-size: 15px;
   }
   .cart-section span {
     font-weight: 600;

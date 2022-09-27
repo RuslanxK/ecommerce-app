@@ -27,7 +27,8 @@
   font-family: "Mukta", sans-serif;
 }
 
-body, html {
+body,
+html {
   background-color: #f8f9fa;
   overflow-x: hidden !important;
 }
@@ -815,9 +816,6 @@ body, html {
   border-bottom: 1px solid #dee2e6;
 }
 
-
-
-
 @media only screen and (max-width: 767px) {
   .navbar {
     .nav-links {
@@ -851,46 +849,41 @@ body, html {
     grid-template-columns: 150px 150px;
     height: 55vh;
 
-    .g1, .g2, .g3, .g4 {
+    .g1,
+    .g2,
+    .g3,
+    .g4 {
+      padding: 0px;
+      margin: 10px;
+      width: 90%;
 
-       padding: 0px;
-       margin: 10px;
-       width:90%;
+      img {
+        width: 50px;
+        padding: 10px;
+      }
 
-       img {
-
-         width: 50px;
-         padding: 10px;
-       }
-
-       h3 {
-
+      h3 {
         font-size: 15px;
-       }
+      }
     }
   }
 
   .category {
     display: grid !important;
     grid-template-columns: 140px 140px !important;
-    
-    
-    button {
 
+    button {
       font-size: 13px !important;
       border: 1px solid rgb(209, 209, 209);
       padding: 6px;
       margin: 5px;
       text-decoration: none !important;
-     
-      
-      &:focus {
 
+      &:focus {
         background-color: #52b788;
         color: white;
-     }
+      }
     }
-
   }
 
   .productsDiv {
@@ -926,8 +919,7 @@ body, html {
     text-align: center;
 
     img {
-
-       width: 180px;
+      width: 180px;
     }
   }
 
@@ -959,6 +951,18 @@ body, html {
       width: 100vw;
       margin-top: 20px;
       @include flexbox(flex, column, center, stretch);
+    }
+
+    .cartProductDiv {
+      img {
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
     }
 
     span {
@@ -1027,9 +1031,8 @@ body, html {
     }
 
     h1 {
-       
-       padding-top: 30px;
-       font-size: 35px !important;
+      padding-top: 30px;
+      font-size: 35px !important;
     }
 
     p {
