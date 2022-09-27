@@ -878,6 +878,7 @@ body {
       border: 1px solid rgb(209, 209, 209);
       padding: 6px;
       margin: 5px;
+      text-decoration: none !important;
      
       
       &:focus {
@@ -1008,6 +1009,7 @@ body {
 
   .about-page {
     @include flexbox(flex, column-reverse, center, center);
+    height: 140vh;
 
     .about-image {
       width: 100vw;
@@ -1021,7 +1023,7 @@ body {
   }
 
   .contact-page {
-    height: 110vh;
+    height: 140vh;
     .contact-inner {
       @include flexbox(flex, column, flex-end, center);
       height: 140vh;
@@ -1032,7 +1034,7 @@ body {
 
       .location {
         @include flexbox(flex, column, space-evenly, center);
-
+         padding: 25px;
         .div1,
         .div2,
         .div3 {

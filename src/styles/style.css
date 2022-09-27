@@ -1611,6 +1611,7 @@ body {
     border: 1px solid #d1d1d1;
     padding: 6px;
     margin: 5px;
+    text-decoration: none !important;
   }
   .category button:focus {
     background-color: #52b788;
@@ -1816,6 +1817,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 140vh;
   }
   .about-page .about-image {
     width: 100vw;
@@ -1826,7 +1828,7 @@ body {
     width: 80vw;
   }
   .contact-page {
-    height: 110vh;
+    height: 140vh;
   }
   .contact-page .contact-inner {
     display: -webkit-box;
@@ -1861,6 +1863,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 25px;
   }
   .contact-page .contact-inner .location .div1,
   .contact-page .contact-inner .location .div2,
