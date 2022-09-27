@@ -1693,7 +1693,6 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 25px;
   }
   .cart-section .productsDiv {
     width: 100vw;
@@ -1719,7 +1718,7 @@ html {
   }
   .cart-section .cartTitle {
     width: 100vw;
-    font-size: 35px;
+    font-size: 35px !important;
   }
   .cart-section .detailsDiv {
     margin: 0px;

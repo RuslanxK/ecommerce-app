@@ -930,7 +930,7 @@ html {
 
   .cart-section {
     @include flexbox(flex, column, top, center);
-    padding: 25px;
+    
 
     .productsDiv {
       width: 100vw;
@@ -945,7 +945,7 @@ html {
 
     .cartTitle {
       width: 100vw;
-      font-size: 35px;
+      font-size: 35px !important;
     }
 
     .detailsDiv {
