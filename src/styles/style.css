@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden !important;
   font-family: "Mukta", sans-serif;
 }
 
@@ -1594,6 +1595,7 @@ body {
   }
   .guarantee .g1 img, .guarantee .g2 img, .guarantee .g3 img, .guarantee .g4 img {
     width: 40px;
+    padding: 15px;
   }
   .guarantee .g1 h3, .guarantee .g2 h3, .guarantee .g3 h3, .guarantee .g4 h3 {
     font-size: 15px;
