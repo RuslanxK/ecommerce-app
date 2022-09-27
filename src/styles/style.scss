@@ -844,13 +844,24 @@ body {
   .guarantee {
     @include flexbox(flex, column, center, center);
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 150px 150px;
     height: 55vh;
 
     .g1, .g2, .g3, .g4 {
 
        padding: 0px;
        margin: 0px;
+       width:90%;
+
+       img {
+
+         width: 40px;
+       }
+
+       h3 {
+
+        font-size: 15px;
+       }
     }
   }
 
