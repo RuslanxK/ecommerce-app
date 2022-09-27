@@ -161,7 +161,7 @@ body {
   .div2 {
     width: 400px;
     height: 70vh;
-    background-image: url("https://okrfashionknitts.com/wp-content/uploads/2021/09/design-b7d15f22-56c5-4965-9804-ad3c886bd0e1.png");
+    background-image: url("https://litextension.com/wp-content/themes/yootheme/cache/1.1-645c9556.png");
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
@@ -817,7 +817,7 @@ body {
 @media only screen and (max-width: 767px) {
   .navbar {
     .nav-links {
-      width: 50vw;
+      width: 55vw;
       @include flexbox(flex, row, space-between, center);
     }
   }
@@ -833,16 +833,39 @@ body {
 
     .div1 {
       @include flexbox(flex, column, top, center);
+      height: 50vh;
+
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   }
 
   .guarantee {
     @include flexbox(flex, column, center, center);
-    height: 80vh;
+    display: grid;
+    grid-template-columns: 260px 260px;
+    height: 55vh;
   }
 
   .category {
     @include flexbox(flex, column, center, center);
+    
+    button {
+
+      font-size: 14px !important;
+      border: 1px solid rgb(209, 209, 209);
+      padding: 3px;
+      margin: 1px;
+      text-decoration: none;
+      
+      &:focus {
+
+        background-color: #52b788;
+        color: white;
+     }
+    }
+
   }
 
   .productsDiv {
@@ -855,7 +878,7 @@ body {
 
       i {
         padding: 10px;
-        font-size: 40px;
+        font-size: 20px;
       }
     }
   }
