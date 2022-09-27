@@ -1671,6 +1671,9 @@ html {
   .product-details-section button {
     margin-bottom: 50px;
   }
+  .product-details-section .product-details-left-div {
+    height: 50vh;
+  }
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
