@@ -1594,8 +1594,8 @@ body {
     width: 90%;
   }
   .guarantee .g1 img, .guarantee .g2 img, .guarantee .g3 img, .guarantee .g4 img {
-    width: 60px;
-    padding: 15px;
+    width: 50px;
+    padding: 10px;
   }
   .guarantee .g1 h3, .guarantee .g2 h3, .guarantee .g3 h3, .guarantee .g4 h3 {
     font-size: 15px;
@@ -1618,9 +1618,8 @@ body {
   .category button {
     font-size: 14px !important;
     border: 1px solid #d1d1d1;
-    padding: 3px;
+    padding: 0px;
     margin: 1px;
-    text-decoration: none;
   }
   .category button:focus {
     background-color: #52b788;
