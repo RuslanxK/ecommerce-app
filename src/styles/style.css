@@ -1589,7 +1589,7 @@ body {
   }
   .guarantee .g1, .guarantee .g2, .guarantee .g3, .guarantee .g4 {
     padding: 0px;
-    margin: 0px;
+    margin: 10px;
     width: 90%;
   }
   .guarantee .g1 img, .guarantee .g2 img, .guarantee .g3 img, .guarantee .g4 img {
