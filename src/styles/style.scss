@@ -921,6 +921,11 @@ body {
     @include flexbox(flex, column, space-between, center);
     height: 40vh;
     text-align: center;
+
+    img {
+
+       width: 180px;
+    }
   }
 
   .wishListComp {
@@ -1017,6 +1022,12 @@ body {
       margin-bottom: 20px;
     }
 
+    h1 {
+       
+       padding-top: 30px;
+       font-size: 35px !important;
+    }
+
     p {
       width: 80vw;
     }
@@ -1029,16 +1040,16 @@ body {
       height: 140vh;
 
       .form {
-        width: 80vw;
+        width: 90vw;
       }
 
       .location {
         @include flexbox(flex, column, space-evenly, center);
-         padding: 25px;
         .div1,
         .div2,
         .div3 {
           width: 100vw;
+          padding: 25px;
           @include flexbox(flex, row, center, center);
 
           h2 {

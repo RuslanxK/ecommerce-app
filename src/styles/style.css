@@ -1662,6 +1662,9 @@ body {
     height: 40vh;
     text-align: center;
   }
+  .footer img {
+    width: 180px;
+  }
   .wishListComp {
     left: 80px;
     top: 100px;
@@ -1824,6 +1827,10 @@ body {
     margin-top: 120px;
     margin-bottom: 20px;
   }
+  .about-page h1 {
+    padding-top: 30px;
+    font-size: 35px !important;
+  }
   .about-page p {
     width: 80vw;
   }
@@ -1847,7 +1854,7 @@ body {
     height: 140vh;
   }
   .contact-page .contact-inner .form {
-    width: 80vw;
+    width: 90vw;
   }
   .contact-page .contact-inner .location {
     display: -webkit-box;
@@ -1863,12 +1870,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 25px;
   }
   .contact-page .contact-inner .location .div1,
   .contact-page .contact-inner .location .div2,
   .contact-page .contact-inner .location .div3 {
     width: 100vw;
+    padding: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
