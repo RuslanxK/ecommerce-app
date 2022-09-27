@@ -1,0 +1,1032 @@
+@mixin flexbox($display, $direction, $justify, $align) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin btn($color, $background) {
+  font-size: 1rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: 500;
+  color: $color;
+  background-color: $background;
+  border: none;
+
+  i {
+    padding-left: 5px;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  height: 70px;
+  width: 100vw;
+  background-color: #eee4e1;
+  position: fixed;
+  z-index: 10;
+  @include flexbox(flex, row, center, center);
+
+  .navbar-container {
+    @include flexbox(flex, row, space-between, center);
+    width: 92vw;
+  }
+  .nav-links {
+    @include flexbox(flex, row, space-evenly, center);
+    font-weight: 500;
+    width: 33vw;
+  }
+  .nav-links span:hover {
+    color: #52b788;
+    cursor: pointer;
+  }
+  i {
+    font-size: 1.4rem;
+    padding-left: 20px;
+  }
+
+  h2 {
+    width: 130px;
+  }
+
+  .cartDiv {
+    width: 100px;
+    @include flexbox(flex, row, space-evenly, center);
+
+    span {
+      margin-bottom: 25px !important;
+    }
+  }
+}
+
+#dot {
+  color: #52b788;
+}
+
+.footer {
+  width: 100vw;
+  height: 200px;
+  background-color: #f8f9fa;
+  border-top: 2px solid #52b788;
+  border-top-style: dotted;
+  @include flexbox(flex, row, space-between, center);
+
+  .div1,
+  .div2,
+  .div3 {
+    width: 33vw;
+    height: 200px;
+    @include flexbox(flex, column, center, center);
+  }
+
+  .social-media {
+    width: 200px;
+    @include flexbox(flex, row, space-evenly, center);
+  }
+
+  .footer-nav-links {
+    width: 250px;
+    @include flexbox(flex, row, space-evenly, center);
+  }
+
+  span:hover {
+    color: #52b788;
+  }
+
+  p {
+    color: #6c757d;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+
+  i:hover {
+    color: #52b788;
+  }
+}
+
+.hero {
+  width: 100vw;
+  margin: 0 auto;
+  height: 85vh;
+  background-color: #eee4e1;
+  @include flexbox(flex, row, center, flex-end);
+
+  .div1 {
+    width: 400px;
+    height: 350px;
+    @include flexbox(flex, column, flex-start, flex-start);
+    border-left: 2px solid #52b788;
+    border-left-style: dotted;
+    padding-left: 10px;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1.5;
+      font-weight: 400;
+
+      span {
+        color: #52b788;
+      }
+    }
+
+    h4 {
+      font-weight: 400;
+    }
+
+    button {
+      @include btn(black, #f9f9f9);
+      transition: all 0.5s;
+    }
+
+    button:hover {
+      color: white;
+      box-shadow: inset 400px 0 0 0 black;
+    }
+  }
+
+  .div2 {
+    width: 400px;
+    height: 70vh;
+    background-image: url("https://okrfashionknitts.com/wp-content/uploads/2021/09/design-b7d15f22-56c5-4965-9804-ad3c886bd0e1.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.guarantee {
+  width: 100vw;
+  height: 200px;
+  @include flexbox(flex, row, center, center);
+
+  .g1,
+  .g2,
+  .g3,
+  .g4 {
+    border-bottom: 2px solid #52b788;
+    border-bottom-style: dotted;
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+    @include flexbox(flex, row-reverse, space-between, center);
+
+    img:hover {
+      transform: scale(1.3);
+      transition: all 300ms;
+    }
+  }
+}
+
+.category {
+  margin: 0 auto;
+  width: 50vw;
+  @include flexbox(flex, row, space-evenly, center);
+  text-align: center;
+  padding-bottom: 15px;
+
+  button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+  }
+
+  button:hover {
+    text-decoration: underline;
+    color: #52b788;
+  }
+}
+
+.productsSection {
+  @include flexbox(flex, column, center, center);
+  width: 100vw;
+
+  .productSection {
+    height: 475px;
+    @include flexbox(flex, column, center, flex-start);
+
+    span {
+      padding-top: 10px;
+    }
+  }
+
+  .productsDiv {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 275px 275px 275px 275px;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    width: 275px;
+    height: 375px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-align: right;
+    background-color: white;
+
+    i {
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    i:hover {
+      color: #52b788;
+    }
+  }
+
+  .productIMG {
+    @include flexbox(flex, column, center, center);
+
+    img {
+      padding-bottom: 10px;
+    }
+
+    .btns {
+      @include flexbox(flex, column, center, center);
+
+      button {
+        @include btn(black, rgba(255, 255, 255, 0));
+        margin: 2px;
+        transition: all 0.5s;
+      }
+
+      button:hover {
+        box-shadow: inset 400px 0 0 0 #eee4e1;
+      }
+
+      #view {
+        background: none;
+        border: none;
+        color: black;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .newsLetter {
+    width: 100vw;
+    height: 300px;
+    background-color: #f9f9f9;
+    @include flexbox(flex, column, center, center);
+
+    input[type="submit"] {
+      width: 10vw;
+      background-color: black;
+      color: white;
+      transition: all 0.5s;
+    }
+
+    input[type="submit"]:hover {
+      box-shadow: inset 400px 0 0 0 #04b983;
+      color: white;
+    }
+
+    input {
+      margin-top: 20px;
+      width: 300px;
+      padding: 8px;
+      border: 1px solid #e9ecef;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      @include btn(#f9f9f9, black);
+    }
+
+    button:hover {
+      @include btn(#f9f9f9, #52b788);
+    }
+  }
+}
+
+#message {
+  color: #52b788;
+}
+
+.product-details-section {
+  @include flexbox(flex, row, center, flex-end);
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+
+  h1 {
+    font-weight: 400;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  p {
+    line-height: 1.8;
+    color: #616161;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+
+  button {
+    @include btn(black, none);
+    background: none;
+    margin-top: 10px;
+    border: 3px solid #52b788;
+    transition: all 0.5s;
+  }
+
+  button:hover {
+    box-shadow: inset 400px 0 0 0 #52b788;
+    color: white;
+  }
+
+  span {
+    background-color: #e9ecef;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .product-details-left-div {
+    width: 50vw;
+    height: 600px;
+    background-color: white;
+    @include flexbox(flex, row, center, center);
+    border-right: 2px solid #52b788;
+    border-right-style: dotted;
+
+    img {
+      transition: all 0.2s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      transition-delay: 1s;
+    }
+  }
+}
+
+.product-details-right-div {
+  width: 50vw;
+  height: 600px;
+  @include flexbox(flex, column, center, center);
+  background-color: white;
+  text-align: center;
+}
+
+.about-page {
+  height: 100vh;
+  @include flexbox(flex, row, center, flex-end);
+  background-color: white;
+  padding-bottom: 20px;
+
+  .about-image {
+    width: 50vw;
+    height: 600px;
+    background: url("https://images.unsplash.com/photo-1469114182292-14c05db80456?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-inner {
+    width: 50vw;
+    height: 600px;
+    background-color: white;
+
+    @include flexbox(flex, column, center, center);
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      border-bottom: 2px solid #52b788;
+      border-bottom-style: dotted;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-top: 20px;
+    }
+  }
+}
+
+.contact-page {
+  height: 100vh;
+  @include flexbox(flex, row, center, flex-end);
+
+  .contact-inner {
+    width: 100vw;
+    height: 600px;
+    background: linear-gradient(
+        to bottom,
+        rgba(109, 107, 107, 0.7) 0%,
+        rgba(109, 107, 107, 0.7) 100%
+      ),
+      url("https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flexbox(flex, row-reverse, space-evenly, center);
+
+    .form {
+      background-color: white;
+      height: 450px;
+      width: 28vw;
+      @include flexbox(flex, column, center, center);
+
+      form {
+        text-align: center;
+        height: 250px;
+        @include flexbox(flex, column, space-evenly, center);
+      }
+
+      h1 {
+        color: #52b788;
+      }
+
+      input {
+        background: none;
+        border: none;
+        border-bottom: 2px solid #cbcbcb;
+        width: 270px;
+        font-size: 1.1rem;
+        color: #6c6d6e;
+      }
+
+      input[type="submit"] {
+        transition: all 0.5s;
+        background-color: #52b788;
+        color: white;
+        padding: 5px;
+        border: none;
+      }
+
+      input[type="submit"]:hover {
+        box-shadow: inset 400px 0 0 0 #000000;
+        color: white;
+        padding: 5px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      input::placeholder {
+        color: #cbcbcb;
+      }
+
+      textarea {
+        border: none;
+        width: 270px;
+        font-size: 1.1rem;
+        border-bottom: 2px solid #cbcbcb;
+        color: #6c757d;
+      }
+
+      textarea:focus {
+        outline: none;
+      }
+
+      textarea::placeholder {
+        color: #cbcbcb;
+      }
+
+      button {
+        @include btn(white, #52b788);
+        width: 270px;
+        height: 45px;
+      }
+
+      button:hover {
+        @include btn(white, black);
+      }
+    }
+
+    .location {
+      height: 400px;
+      width: 25vw;
+      @include flexbox(flex, column, space-evenly, center);
+    }
+
+    .div1,
+    .div2,
+    .div3 {
+      width: 350px;
+      @include flexbox(flex, row, center, center);
+
+      i {
+        color: white;
+      }
+
+      h2 {
+        color: white;
+        font-weight: 400;
+        font-size: 2rem;
+      }
+
+      span {
+        color: white;
+        font-size: 1.1rem;
+      }
+
+      .icon-div {
+        width: 20%;
+        text-align: center;
+        font-size: 2.5rem;
+      }
+
+      .address-div {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.cart-section {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100vw;
+  padding-top: 150px;
+  @include flexbox(flex, row, center, top);
+
+  .productsDiv {
+    margin: 4px, 4px;
+    width: 50vw;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    text-align: center;
+    margin-right: 20px;
+
+    .cartTitle {
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+  }
+
+  .detailsDiv {
+    @include flexbox(flex, column, flex-start, stretch);
+    width: 30vw;
+    margin-left: 20px;
+
+    .test {
+      background-color: #f9f9f9;
+      width: 30vw;
+    }
+
+    span {
+      font-weight: 600;
+      padding-bottom: 4px;
+      padding-top: 4px;
+      @include flexbox(flex, row, space-between, center);
+      padding-left: 40px;
+      padding-right: 40px;
+      font-weight: 500;
+    }
+
+    #total {
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #e9ecef;
+      margin-top: 10px;
+    }
+
+    #coupon {
+      color: #52b788;
+      cursor: pointer;
+    }
+
+    .summary {
+      padding-top: 30px;
+      padding-bottom: 20px;
+
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 5px;
+      width: 35%;
+      margin-left: 35px;
+      margin-right: 2px;
+      font-size: 15px;
+      border: 2px solid #f0f0f0;
+    }
+
+    input[type="submit"] {
+      @include btn(white, black);
+      padding: 10px;
+      margin-top: 20px;
+      transition: all 0.5s;
+    }
+
+    input[type="submit"]:hover {
+      box-shadow: inset 600px 0 0 0 #52b788;
+    }
+
+    h3 {
+      @include flexbox(flex, row, space-between, center);
+      padding-left: 40px;
+      padding-right: 40px;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    #h3Card {
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    button {
+      @include btn(white, black);
+      padding: 10px;
+      margin-top: 10px;
+      transition: all 0.5s;
+    }
+
+    button:hover {
+      box-shadow: inset 600px 0 0 0 #52b788;
+    }
+
+    .couponDiv {
+      #applyBtn {
+        @include btn(white, #52b788);
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    .card {
+      #cardnumber {
+        width: 70%;
+      }
+    }
+  }
+
+  .cartProductDiv {
+    background-color: white;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    @include flexbox(flex, row, space-between, center);
+    padding: 10px;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+.addedProduct {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  animation: fadein 3s;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 250px;
+  height: 200px;
+  padding-top: 20px;
+
+  h3 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .innerAdded {
+    @include flexbox(flex, column, center, center);
+
+    button {
+      @include btn(white, #eee4e1);
+      margin-top: 15px;
+      color: black;
+    }
+
+    button:hover {
+      box-shadow: inset 400px 0 0 0 #52b788;
+      color: white;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.thankyou-section {
+  width: 100vw;
+  height: 100vh;
+  @include flexbox(flex, column, center, center);
+
+  .thank-you-div {
+    background-color: #eee4e1;
+    width: 40vw;
+    text-align: center;
+    height: 60vh;
+    @include flexbox(flex, column, center, center);
+
+    button {
+      @include btn(white, black);
+      transition: all 0.5s;
+    }
+
+    button:hover {
+      box-shadow: inset 400px 0 0 0 #52b788;
+    }
+  }
+}
+
+.wishListComp {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  right: 120px;
+  top: 80px;
+  text-align: center;
+  @include flexbox(flex, column, top, stretch);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+  text-align: center;
+  padding: 10px;
+
+  h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  button {
+    @include btn(white, black);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: all 0.5s;
+    align-self: center;
+  }
+
+  button:hover {
+    @include btn(white, #52b788);
+  }
+}
+
+.productWL {
+  @include flexbox(flex, row-reverse, space-evenly, center);
+
+  border-top: 1px solid #eeeeee;
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    .nav-links {
+      width: 50vw;
+      @include flexbox(flex, row, space-between, center);
+    }
+  }
+
+  .hero {
+    @include flexbox(flex, column-reverse, center, center);
+    padding-top: 100px;
+
+    .div2 {
+      @include flexbox(flex, column, bottom, center);
+      height: 100vh;
+    }
+
+    .div1 {
+      @include flexbox(flex, column, top, center);
+    }
+  }
+
+  .guarantee {
+    @include flexbox(flex, column, center, center);
+    height: 80vh;
+  }
+
+  .category {
+    @include flexbox(flex, column, center, center);
+  }
+
+  .productsDiv {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    .product {
+      width: 350px;
+
+      i {
+        padding: 10px;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .newsLetter {
+    text-align: center;
+
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    input {
+      width: 250px !important;
+    }
+  }
+
+  .footer {
+    @include flexbox(flex, column, space-between, center);
+    height: 40vh;
+    text-align: center;
+  }
+
+  .wishListComp {
+    left: 80px;
+    top: 100px;
+  }
+
+  .cart-section {
+    @include flexbox(flex, column, top, center);
+
+    .productsDiv {
+      width: 100vw;
+      padding-left: 40px;
+      @include flexbox(flex, column, center, center);
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: justify;
+      text-align: center;
+    }
+
+    .cartTitle {
+      width: 100vw;
+    }
+
+    .detailsDiv {
+      margin: 0px;
+      width: 100vw;
+      margin-top: 20px;
+      @include flexbox(flex, column, center, stretch);
+    }
+
+    span {
+      font-weight: 600;
+      padding-bottom: 4px;
+      padding-top: 4px;
+      @include flexbox(flex, row, space-between, center);
+      padding-left: 40px;
+      padding-right: 40px;
+      font-weight: 500;
+    }
+
+    #total {
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #e9ecef;
+      margin-top: 10px;
+    }
+
+    #coupon {
+      color: #52b788;
+      cursor: pointer;
+    }
+
+    .summary {
+      padding-top: 30px;
+      padding-bottom: 20px;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  .test {
+    width: 100vw !important;
+  }
+
+  .product-details-section {
+    @include flexbox(flex, column, center, center);
+    height: 140vh;
+
+    .product-details-left-div {
+      border: none;
+    }
+
+    img {
+      width: 350px;
+      height: 350px;
+    }
+
+    .product-details-right-div {
+      @include flexbox(flex, column, center, center);
+      width: 100vw;
+    }
+  }
+
+  .about-page {
+    @include flexbox(flex, column-reverse, center, center);
+
+    .about-image {
+      width: 100vw;
+      margin-top: 120px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      width: 80vw;
+    }
+  }
+
+  .contact-page {
+    height: 110vh;
+    .contact-inner {
+      @include flexbox(flex, column, flex-end, center);
+      height: 140vh;
+
+      .form {
+        width: 80vw;
+      }
+
+      .location {
+        @include flexbox(flex, column, space-evenly, center);
+
+        .div1,
+        .div2,
+        .div3 {
+          width: 100vw;
+          @include flexbox(flex, row, center, center);
+
+          h2 {
+            font-size: 1.2rem;
+          }
+
+          .icon-div {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .category {
+    display: grid;
+    grid-template-columns: 135px 135px 135px;
+    padding-top: 20px;
+  }
+
+  button {
+    padding-bottom: 20px;
+  }
+
+  .thankyou-section {
+    .thank-you-div {
+      width: 100vw;
+    }
+  }
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10px;
+}
