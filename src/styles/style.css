@@ -1656,7 +1656,7 @@ html {
     width: 250px !important;
   }
   .product-details-section {
-    height: 120vh !important;
+    height: 180vh !important;
   }
   .product-details-section img {
     width: 200px !important;
@@ -1672,7 +1672,7 @@ html {
     margin-bottom: 50px;
   }
   .product-details-section .product-details-left-div {
-    height: 50vh;
+    height: 100vh;
   }
   .footer {
     display: -webkit-box;
