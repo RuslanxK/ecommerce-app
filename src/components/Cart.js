@@ -110,7 +110,7 @@ const Cart = () => {
     };
 
     const saveCard = await axios.post(
-      "http://localhost:8000/api/payments",
+      "https://ecommerce-app-prods.herokuapp.com/api/payments",
       paymentObj
     );
     console.log(saveCard);
